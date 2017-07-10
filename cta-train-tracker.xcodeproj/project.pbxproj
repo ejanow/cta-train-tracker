@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50BAFDFDE83C54D8B191F5DE /* Pods_cta_train_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075ACF8E6A8662F575BD4468 /* Pods_cta_train_tracker.framework */; };
+		DC24E9521F133E6700704060 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24E9511F133E6700704060 /* Secret.swift */; };
+		DC258CCC1EB2D12D0067837D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258CCB1EB2D12D0067837D /* AppDelegate.swift */; };
+		DC258CD11EB2D12D0067837D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC258CCF1EB2D12D0067837D /* Main.storyboard */; };
+		DC258CD31EB2D12D0067837D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC258CD21EB2D12D0067837D /* Assets.xcassets */; };
+		DC258CD61EB2D12D0067837D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC258CD41EB2D12D0067837D /* LaunchScreen.storyboard */; };
+		DC258CFA1EB2D1F00067837D /* CTAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258CF91EB2D1F00067837D /* CTAService.swift */; };
+		DC258CFD1EB2E4B80067837D /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258CFC1EB2E4B80067837D /* Stop.swift */; };
+		DC258CFF1EB2E4C60067837D /* StopRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258CFE1EB2E4C60067837D /* StopRepo.swift */; };
+		DC258D011EB2E4D70067837D /* StopQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D001EB2E4D70067837D /* StopQueries.swift */; };
+		DC258D031EB420E70067837D /* stops.csv in Resources */ = {isa = PBXBuildFile; fileRef = DC258D021EB420E70067837D /* stops.csv */; };
+		DC258D051EB421650067837D /* StopFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D041EB421650067837D /* StopFactory.swift */; };
+		DC258D081EB422080067837D /* DirectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D071EB422080067837D /* DirectionType.swift */; };
+		DC258D0A1EB422310067837D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D091EB422310067837D /* Line.swift */; };
+		DC258D0C1EB422CB0067837D /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D0B1EB422CB0067837D /* Direction.swift */; };
+		DC258D0E1EB44D1C0067837D /* LineSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D0D1EB44D1C0067837D /* LineSelectViewController.swift */; };
+		DC258D101EB454450067837D /* StopSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D0F1EB454450067837D /* StopSelectTableViewController.swift */; };
+		DC258D121EB50B510067837D /* ArrivalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D111EB50B510067837D /* ArrivalsTableViewController.swift */; };
+		DC258D151EB50BE60067837D /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D141EB50BE60067837D /* Arrival.swift */; };
+		DC258D171EB50BF90067837D /* ArrivalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D161EB50BF90067837D /* ArrivalFactory.swift */; };
+		DC258D1B1EB5153B0067837D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC258D1A1EB5153B0067837D /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC258CDD1EB2D12E0067837D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC258CC01EB2D12D0067837D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC258CC71EB2D12D0067837D;
+			remoteInfo = "janowski-assignment2";
+		};
+		DC258CE81EB2D12E0067837D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC258CC01EB2D12D0067837D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC258CC71EB2D12D0067837D;
+			remoteInfo = "janowski-assignment2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		075ACF8E6A8662F575BD4468 /* Pods_cta_train_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cta_train_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		230CA9B44419F58F2DF4E683 /* Pods-cta-train-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cta-train-tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-cta-train-tracker/Pods-cta-train-tracker.release.xcconfig"; sourceTree = "<group>"; };
+		DC24E9511F133E6700704060 /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		DC258CC81EB2D12D0067837D /* cta-train-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cta-train-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC258CCB1EB2D12D0067837D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC258CD01EB2D12D0067837D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC258CD21EB2D12D0067837D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC258CD51EB2D12D0067837D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC258CD71EB2D12D0067837D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC258CDC1EB2D12E0067837D /* cta-train-trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cta-train-trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC258CE71EB2D12E0067837D /* cta-train-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cta-train-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC258CF91EB2D1F00067837D /* CTAService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTAService.swift; sourceTree = "<group>"; };
+		DC258CFC1EB2E4B80067837D /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		DC258CFE1EB2E4C60067837D /* StopRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopRepo.swift; sourceTree = "<group>"; };
+		DC258D001EB2E4D70067837D /* StopQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopQueries.swift; sourceTree = "<group>"; };
+		DC258D021EB420E70067837D /* stops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.csv; sourceTree = "<group>"; };
+		DC258D041EB421650067837D /* StopFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopFactory.swift; sourceTree = "<group>"; };
+		DC258D071EB422080067837D /* DirectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionType.swift; sourceTree = "<group>"; };
+		DC258D091EB422310067837D /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		DC258D0B1EB422CB0067837D /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		DC258D0D1EB44D1C0067837D /* LineSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSelectViewController.swift; sourceTree = "<group>"; };
+		DC258D0F1EB454450067837D /* StopSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopSelectTableViewController.swift; sourceTree = "<group>"; };
+		DC258D111EB50B510067837D /* ArrivalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalsTableViewController.swift; sourceTree = "<group>"; };
+		DC258D141EB50BE60067837D /* Arrival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		DC258D161EB50BF90067837D /* ArrivalFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalFactory.swift; sourceTree = "<group>"; };
+		DC258D1A1EB5153B0067837D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E3FF054612737CFA29BC886B /* Pods-cta-train-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cta-train-tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cta-train-tracker/Pods-cta-train-tracker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC258CC51EB2D12D0067837D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BAFDFDE83C54D8B191F5DE /* Pods_cta_train_tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC258CD91EB2D12E0067837D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC258CE41EB2D12E0067837D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93F8836449CF150BA7887540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				075ACF8E6A8662F575BD4468 /* Pods_cta_train_tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8CD8C06B0E3046294D0C24C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3FF054612737CFA29BC886B /* Pods-cta-train-tracker.debug.xcconfig */,
+				230CA9B44419F58F2DF4E683 /* Pods-cta-train-tracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC258CBF1EB2D12D0067837D = {
+			isa = PBXGroup;
+			children = (
+				DC258CCA1EB2D12D0067837D /* cta-train-tracker */,
+				DC258CC91EB2D12D0067837D /* Products */,
+				B8CD8C06B0E3046294D0C24C /* Pods */,
+				93F8836449CF150BA7887540 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC258CC91EB2D12D0067837D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC258CC81EB2D12D0067837D /* cta-train-tracker.app */,
+				DC258CDC1EB2D12E0067837D /* cta-train-trackerTests.xctest */,
+				DC258CE71EB2D12E0067837D /* cta-train-trackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC258CCA1EB2D12D0067837D /* cta-train-tracker */ = {
+			isa = PBXGroup;
+			children = (
+				DC258D131EB50BD20067837D /* Arrival */,
+				DC258D061EB421F80067837D /* Enums */,
+				DC258CFB1EB2E4A80067837D /* Stop */,
+				DC258D021EB420E70067837D /* stops.csv */,
+				DC258CCB1EB2D12D0067837D /* AppDelegate.swift */,
+				DC258CF91EB2D1F00067837D /* CTAService.swift */,
+				DC258D1A1EB5153B0067837D /* Utils.swift */,
+				DC258CCF1EB2D12D0067837D /* Main.storyboard */,
+				DC258CD21EB2D12D0067837D /* Assets.xcassets */,
+				DC258CD41EB2D12D0067837D /* LaunchScreen.storyboard */,
+				DC258CD71EB2D12D0067837D /* Info.plist */,
+				DC258D0D1EB44D1C0067837D /* LineSelectViewController.swift */,
+				DC258D0F1EB454450067837D /* StopSelectTableViewController.swift */,
+				DC258D111EB50B510067837D /* ArrivalsTableViewController.swift */,
+				DC24E9511F133E6700704060 /* Secret.swift */,
+			);
+			path = "cta-train-tracker";
+			sourceTree = "<group>";
+		};
+		DC258CFB1EB2E4A80067837D /* Stop */ = {
+			isa = PBXGroup;
+			children = (
+				DC258CFC1EB2E4B80067837D /* Stop.swift */,
+				DC258CFE1EB2E4C60067837D /* StopRepo.swift */,
+				DC258D001EB2E4D70067837D /* StopQueries.swift */,
+				DC258D041EB421650067837D /* StopFactory.swift */,
+			);
+			name = Stop;
+			sourceTree = "<group>";
+		};
+		DC258D061EB421F80067837D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DC258D071EB422080067837D /* DirectionType.swift */,
+				DC258D091EB422310067837D /* Line.swift */,
+				DC258D0B1EB422CB0067837D /* Direction.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		DC258D131EB50BD20067837D /* Arrival */ = {
+			isa = PBXGroup;
+			children = (
+				DC258D141EB50BE60067837D /* Arrival.swift */,
+				DC258D161EB50BF90067837D /* ArrivalFactory.swift */,
+			);
+			name = Arrival;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC258CC71EB2D12D0067837D /* cta-train-tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC258CF01EB2D12E0067837D /* Build configuration list for PBXNativeTarget "cta-train-tracker" */;
+			buildPhases = (
+				A0DBE0F14AAC1D152EFB9C7D /* [CP] Check Pods Manifest.lock */,
+				DC258CC41EB2D12D0067837D /* Sources */,
+				DC258CC51EB2D12D0067837D /* Frameworks */,
+				DC258CC61EB2D12D0067837D /* Resources */,
+				669E47C048C3C86CD37035F8 /* [CP] Embed Pods Frameworks */,
+				BF374245A270E1B43477B9FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cta-train-tracker";
+			productName = "janowski-assignment2";
+			productReference = DC258CC81EB2D12D0067837D /* cta-train-tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC258CDB1EB2D12E0067837D /* cta-train-trackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC258CF31EB2D12E0067837D /* Build configuration list for PBXNativeTarget "cta-train-trackerTests" */;
+			buildPhases = (
+				DC258CD81EB2D12E0067837D /* Sources */,
+				DC258CD91EB2D12E0067837D /* Frameworks */,
+				DC258CDA1EB2D12E0067837D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC258CDE1EB2D12E0067837D /* PBXTargetDependency */,
+			);
+			name = "cta-train-trackerTests";
+			productName = "janowski-assignment2Tests";
+			productReference = DC258CDC1EB2D12E0067837D /* cta-train-trackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC258CE61EB2D12E0067837D /* cta-train-trackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC258CF61EB2D12E0067837D /* Build configuration list for PBXNativeTarget "cta-train-trackerUITests" */;
+			buildPhases = (
+				DC258CE31EB2D12E0067837D /* Sources */,
+				DC258CE41EB2D12E0067837D /* Frameworks */,
+				DC258CE51EB2D12E0067837D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC258CE91EB2D12E0067837D /* PBXTargetDependency */,
+			);
+			name = "cta-train-trackerUITests";
+			productName = "janowski-assignment2UITests";
+			productReference = DC258CE71EB2D12E0067837D /* cta-train-trackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC258CC01EB2D12D0067837D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "DePaul University";
+				TargetAttributes = {
+					DC258CC71EB2D12D0067837D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MQ79U7S5FQ;
+						ProvisioningStyle = Automatic;
+					};
+					DC258CDB1EB2D12E0067837D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MQ79U7S5FQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC258CC71EB2D12D0067837D;
+					};
+					DC258CE61EB2D12E0067837D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MQ79U7S5FQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC258CC71EB2D12D0067837D;
+					};
+				};
+			};
+			buildConfigurationList = DC258CC31EB2D12D0067837D /* Build configuration list for PBXProject "cta-train-tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC258CBF1EB2D12D0067837D;
+			productRefGroup = DC258CC91EB2D12D0067837D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC258CC71EB2D12D0067837D /* cta-train-tracker */,
+				DC258CDB1EB2D12E0067837D /* cta-train-trackerTests */,
+				DC258CE61EB2D12E0067837D /* cta-train-trackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC258CC61EB2D12D0067837D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC258D031EB420E70067837D /* stops.csv in Resources */,
+				DC258CD61EB2D12D0067837D /* LaunchScreen.storyboard in Resources */,
+				DC258CD31EB2D12D0067837D /* Assets.xcassets in Resources */,
+				DC258CD11EB2D12D0067837D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC258CDA1EB2D12E0067837D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC258CE51EB2D12E0067837D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		669E47C048C3C86CD37035F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cta-train-tracker/Pods-cta-train-tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DBE0F14AAC1D152EFB9C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF374245A270E1B43477B9FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cta-train-tracker/Pods-cta-train-tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC258CC41EB2D12D0067837D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC258D171EB50BF90067837D /* ArrivalFactory.swift in Sources */,
+				DC258D011EB2E4D70067837D /* StopQueries.swift in Sources */,
+				DC258D081EB422080067837D /* DirectionType.swift in Sources */,
+				DC258CFA1EB2D1F00067837D /* CTAService.swift in Sources */,
+				DC258D151EB50BE60067837D /* Arrival.swift in Sources */,
+				DC258D0C1EB422CB0067837D /* Direction.swift in Sources */,
+				DC258D1B1EB5153B0067837D /* Utils.swift in Sources */,
+				DC258CCC1EB2D12D0067837D /* AppDelegate.swift in Sources */,
+				DC258D0E1EB44D1C0067837D /* LineSelectViewController.swift in Sources */,
+				DC258D051EB421650067837D /* StopFactory.swift in Sources */,
+				DC258D121EB50B510067837D /* ArrivalsTableViewController.swift in Sources */,
+				DC258D0A1EB422310067837D /* Line.swift in Sources */,
+				DC258CFD1EB2E4B80067837D /* Stop.swift in Sources */,
+				DC24E9521F133E6700704060 /* Secret.swift in Sources */,
+				DC258CFF1EB2E4C60067837D /* StopRepo.swift in Sources */,
+				DC258D101EB454450067837D /* StopSelectTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC258CD81EB2D12E0067837D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC258CE31EB2D12E0067837D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC258CDE1EB2D12E0067837D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC258CC71EB2D12D0067837D /* cta-train-tracker */;
+			targetProxy = DC258CDD1EB2D12E0067837D /* PBXContainerItemProxy */;
+		};
+		DC258CE91EB2D12E0067837D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC258CC71EB2D12D0067837D /* cta-train-tracker */;
+			targetProxy = DC258CE81EB2D12E0067837D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC258CCF1EB2D12D0067837D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC258CD01EB2D12D0067837D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC258CD41EB2D12D0067837D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC258CD51EB2D12D0067837D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC258CEE1EB2D12E0067837D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC258CEF1EB2D12E0067837D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC258CF11EB2D12E0067837D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3FF054612737CFA29BC886B /* Pods-cta-train-tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/ProjectName-Prefix.pch";
+				INFOPLIST_FILE = "cta-train-tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.janowski.cta-train-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC258CF21EB2D12E0067837D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 230CA9B44419F58F2DF4E683 /* Pods-cta-train-tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/ProjectName-Prefix.pch";
+				INFOPLIST_FILE = "cta-train-tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.janowski.cta-train-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DC258CF41EB2D12E0067837D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "janowski-assignment2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.depaul.csc471.janowski-assignment2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cta-train-tracker.app/cta-train-tracker";
+			};
+			name = Debug;
+		};
+		DC258CF51EB2D12E0067837D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "janowski-assignment2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.depaul.csc471.janowski-assignment2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cta-train-tracker.app/cta-train-tracker";
+			};
+			name = Release;
+		};
+		DC258CF71EB2D12E0067837D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "janowski-assignment2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.depaul.csc471.janowski-assignment2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "janowski-assignment2";
+			};
+			name = Debug;
+		};
+		DC258CF81EB2D12E0067837D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MQ79U7S5FQ;
+				INFOPLIST_FILE = "janowski-assignment2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.depaul.csc471.janowski-assignment2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "janowski-assignment2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC258CC31EB2D12D0067837D /* Build configuration list for PBXProject "cta-train-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC258CEE1EB2D12E0067837D /* Debug */,
+				DC258CEF1EB2D12E0067837D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC258CF01EB2D12E0067837D /* Build configuration list for PBXNativeTarget "cta-train-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC258CF11EB2D12E0067837D /* Debug */,
+				DC258CF21EB2D12E0067837D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC258CF31EB2D12E0067837D /* Build configuration list for PBXNativeTarget "cta-train-trackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC258CF41EB2D12E0067837D /* Debug */,
+				DC258CF51EB2D12E0067837D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC258CF61EB2D12E0067837D /* Build configuration list for PBXNativeTarget "cta-train-trackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC258CF71EB2D12E0067837D /* Debug */,
+				DC258CF81EB2D12E0067837D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC258CC01EB2D12D0067837D /* Project object */;
+}
